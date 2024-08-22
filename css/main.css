@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tabs li {
+    padding: 10px;
+    background-color: #0c2da3;
+    color: white;
+    font-weight: bold;
+    border-right: 1px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.tabs li.active,
+.tabs li:hover {
+    background-color: white;
+    color: #204cea;
+    border-top: 2px solid #204cea;
+}
+.content {
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 50%);
+    width: 500px;
+}
+.content div {
+    padding: 20px;
+    font-size: 14px;
+}
+.content div:not(:first-child) {
+    display: none;
+}
